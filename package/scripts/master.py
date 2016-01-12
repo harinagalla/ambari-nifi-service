@@ -166,6 +166,8 @@ class Master(Script):
     import status_params
     self.configure(env) 
     self.set_conf_bin(env)    
+    Execute('touch ' + params.nifi_lock_file)
+    Execute('chown ' + params.nifi_user + ':' + params.nifi_group + ' ' + params.nifi_lock_file)
     Execute('echo pid file ' + status_params.nifi_pid_file)
     Execute('echo JAVA_HOME=' + params.jdk64_home)
 

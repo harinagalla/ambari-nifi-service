@@ -3,7 +3,7 @@ Ambari service for easily installing and managing NiFi on HDP cluster and viewin
 
 Features:
 
-- By default, downloads the GA version Nifi 0.3.0, but also gives option to build the latest Nifi from source instead
+- By default, downloads the current GA version - HDF 1.1.1 package (nifi 0.4.1) - but also gives option to build the latest Nifi from source instead
 - Exposes nifi.properties, bootstrap.conf, logback.xml in Ambari UI (so you can configure port, memory, log dir etc)
 - Sets up initial flow.xml.gz that sets up Ambari reporting task to send Ambari metrics
 - Includes metrics widgets from [here](https://cwiki.apache.org/confluence/display/NIFI/Ambari+Metrics)
@@ -194,7 +194,7 @@ service ambari-server restart
   
   - Start Solr in cloud mode and create a collection called tweets
   ```  
-  export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk.x86_64
+  export JAVA_HOME=<JAVA_HOME used by Ambari>
   /opt/lucidworks-hdpsearch/solr/bin/solr start -c -z localhost:2181
 
   /opt/lucidworks-hdpsearch/solr/bin/solr create -c tweets \

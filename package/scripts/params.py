@@ -58,4 +58,5 @@ else:
   metrics_collector_host = ''
   metrics_collector_port = ''
 
+nifi_lock_file = '/var/lock/subsys/nifi'
 temp_file='/tmp/'+nifi_dirname+'.zip'

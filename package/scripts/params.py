@@ -61,4 +61,4 @@ else:
 nifi_lock_file = '/var/lock/subsys/nifi'
 
 temp_file='/tmp/'+nifi_dirname+'.zip'
-temp_lib_file='/tmp/'+nifi_dirname+'/lib.zip'
+temp_lib_file='/tmp/lib.zip'

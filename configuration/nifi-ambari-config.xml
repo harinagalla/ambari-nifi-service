@@ -42,7 +42,7 @@
   </property>
   
   <property>
-    <name>nifi.webapp.http.address</name>
+    <name>nifi.webapp.address</name>
     <value> </value>
   </property>
     

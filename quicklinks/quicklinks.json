@@ -13,11 +13,11 @@
                   "url" : "%@://%@:%@/nifi/",
                   "template" : "%@://%@:%@/nifi/",
                   "port" : {
-                    "regex" : "\\w*:(\\d+)",
+                    "regex" : "^(\\d+)$",
                     "site" : "nifi-ambari-config",
-                    "http_property" : "nifi.webapp.address",
+                    "http_property" : "nifi.port",
                     "http_default_port" : "9090"
-                    "https_property" : "nifi.webapp.address",
+                    "https_property" : "nifi.port",
                     "https_default_port" : "9090"
                   },
                   "requires_user_name" : "false"

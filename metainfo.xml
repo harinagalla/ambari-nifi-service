@@ -36,7 +36,13 @@
         	<config-type>nifi-ambari-config</config-type>      	   
                 <config-type>nifi-flow</config-type> 
       	    </configuration-dependencies>
-            <restartRequiredAfterChange>false</restartRequiredAfterChange>
+      	    <quickLinksConfigurations>
+        	    <quickLinksConfiguration>
+          		    <fileName>quicklinks.json</fileName>
+          		    <default>true</default>
+        	    </quickLinksConfiguration>
+      	    </quickLinksConfigurations>
+            <restartRequiredAfterChange>true</restartRequiredAfterChange>
             <widgetsFileName>widgets.json</widgetsFileName>
       		<metricsFileName>metrics.json</metricsFileName>        
         </service>

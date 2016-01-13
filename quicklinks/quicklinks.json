@@ -1,0 +1,27 @@
+{
+  "name": "default",
+  "description": "default quick links configuration",
+  "configuration": {
+    "protocol":
+    {
+      "type":"HTTP_ONLY"
+    },
+    "links" : [
+                {
+                  "name" : "NiFi_Flow",
+                  "label" : "NIFI FLOW",
+                  "url" : "%@://%@:%@/nifi/",
+                  "template" : "%@://%@:%@/nifi/",
+                  "port" : {
+                    "regex" : "\\w*:(\\d+)",
+                    "site" : "nifi-ambari-config",
+                    "http_property" : "nifi.webapp.address",
+                    "http_default_port" : "9090"
+                    "https_property" : "nifi.webapp.address",
+                    "https_default_port" : "9090"
+                  },
+                  "requires_user_name" : "false"
+                }
+              ]
+  }
+}

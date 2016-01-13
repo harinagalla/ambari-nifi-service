@@ -10,9 +10,9 @@ from resource_management.libraries.functions.default import default
 # server configurations
 config = Script.get_config()
 
-#nifi_dirname = 'nifi-0.3.0-SNAPSHOT'
+nifi_dirname = 'nifi-0.3.0-SNAPSHOT'
 #nifi_dirname = 'nifi-0.3.0'
-nifi_dirname = 'nifi-1.1.1.0-12'
+#nifi_dirname = 'nifi-1.1.1.0-12'
  
     
 # params from nifi-ambari-config

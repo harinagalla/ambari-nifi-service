@@ -65,6 +65,7 @@ class Master(Script):
       if not os.path.exists(params.temp_file):
         Execute('wget '+snapshot_package+' -O '+params.temp_file+' -a '  + params.nifi_log_file, user=params.nifi_user)
       Execute('unzip '+params.temp_file+' -d ' + params.nifi_install_dir + ' >> ' + params.nifi_log_file, user=params.nifi_user)
+      Execute('rm '+params.temp_file)
       #Execute('rm -rf ' +params.nifi_dir +'/lib/')
       #if not os.path.exists(params.temp_lib_file):
       #  Execute('wget https://www.dropbox.com/s/1l4amajzyx95pzb/lib.zip?dl=0 -O ' +params.temp_lib_file+ ' -a '  + params.nifi_log_file, user=params.nifi_user)

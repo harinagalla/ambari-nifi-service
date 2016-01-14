@@ -43,7 +43,7 @@
   
   <property>
     <name>nifi.webapp.address</name>
-    <value>nav-hdp-d-m1.livetv-ifs.com:9090</value>
+    <value>localhost:9090</value>
   </property>
     
 </configuration>  

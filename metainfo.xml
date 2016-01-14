@@ -37,12 +37,12 @@
                 <config-type>nifi-flow</config-type> 
       	    </configuration-dependencies>
       	    <quickLinksConfigurations>
-        	    <quickLinksConfiguration>
-          		    <fileName>quicklinks.json</fileName>
-          		    <default>true</default>
-        	    </quickLinksConfiguration>
+      	        <quickLinksConfiguration>
+      	            <fileName>quicklinks.json</fileName>
+      	            <default>true</default>
+      	        </quickLinksConfiguration>
       	    </quickLinksConfigurations>
-            <restartRequiredAfterChange>true</restartRequiredAfterChange>
+      	    <restartRequiredAfterChange>true</restartRequiredAfterChange>
             <widgetsFileName>widgets.json</widgetsFileName>
       		<metricsFileName>metrics.json</metricsFileName>        
         </service>
